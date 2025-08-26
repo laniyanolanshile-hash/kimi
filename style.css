@@ -1,0 +1,343 @@
+/* ========================= */
+/* General Reset & Base */
+/* ========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background: #111;
+  color: #fff;
+  line-height: 1.6;
+}
+
+/* ========================= */
+/* Header & Navigation */
+/* ========================= */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+  background: #000;
+  border-bottom: 2px solid gold;
+}
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: gold;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: 0.3s;
+}
+nav a.active,
+nav a:hover {
+  color: gold;
+  border-bottom: 2px solid gold;
+  padding-bottom: 2px;
+}
+
+/* ========================= */
+/* Hero Banner */
+/* ========================= */
+.hero {
+  background: url("golden\ banner.jpg") center/cover no-repeat;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.hero-small {
+  height: 40vh;
+}
+.hero-text {
+  background: rgba(26, 26, 26, 0.6);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 215, 0, 0.25);
+  border-radius: 12px;
+  padding: 2rem 3rem;
+  box-shadow: 0 0 12px rgba(255, 215, 0, 0.2);
+}
+.hero-text h1 {
+  font-size: 3rem;
+  color: gold;
+}
+.hero-text p {
+  font-size: 1.2rem;
+}
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.8rem 2rem;
+  background: gold;
+  color: #111;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.btn:hover {
+  background: #fff;
+  color: gold;
+}
+
+/* ========================= */
+/* Sections */
+/* ========================= */
+.container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+h2 {
+  margin: 2rem 0 1rem;
+  color: gold;
+  text-align: center;
+}
+
+/* ========================= */
+/* Glass Effect (Reusable) */
+/* ========================= */
+.glass-box {
+  background: rgba(26, 26, 26, 0.7);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 215, 0, 0.3);
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.15);
+  padding: 2rem;
+}
+
+/* About Section */
+.about {
+  background: rgba(26, 26, 26, 0.6);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 215, 0, 0.25);
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(255, 215, 0, 0.15);
+  padding: 2rem;
+}
+.about p {
+  margin-bottom: 1rem;
+}
+
+/* ========================= */
+/* Menu & Cards */
+/* ========================= */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+.card {
+  background: rgba(26, 26, 26, 0.6);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 215, 0, 0.25);
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 18px rgba(255, 215, 0, 0.35);
+}
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+.card h3 {
+  margin: 1rem 0 0.5rem;
+  color: gold;
+}
+.card p {
+  padding: 0 1rem;
+  font-size: 0.9rem;
+  color: #ddd;
+}
+.card span {
+  display: block;
+  margin: 0.5rem 0;
+  font-weight: bold;
+}
+button {
+  background: gold;
+  color: #111;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  transition: 0.3s;
+}
+button:hover {
+  background: #fff;
+  color: gold;
+}
+
+/* ========================= */
+/* Contact Page */
+/* ========================= */
+.contact {
+  margin-top: 2rem;
+}
+.contact h2 {
+  color: gold;
+}
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+.contact-info {
+  background: rgba(26, 26, 26, 0.7);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 215, 0, 0.25);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 0 12px rgba(255, 215, 0, 0.2);
+}
+.contact-info p {
+  margin: 10px 0;
+}
+.contact-form {
+  background: rgba(26, 26, 26, 0.7);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 215, 0, 0.25);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 0 12px rgba(255, 215, 0, 0.2);
+}
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+.contact-form label {
+  margin-top: 10px;
+  font-weight: bold;
+}
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #111;
+  color: #fff;
+}
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border: 1px solid gold;
+  outline: none;
+}
+.contact-form button {
+  margin-top: 15px;
+  padding: 12px;
+  background: gold;
+  border: none;
+  color: #111;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.contact-form button:hover {
+  background: #fff;
+  color: gold;
+}
+
+/* ========================= */
+/* Map Section */
+/* ========================= */
+.map {
+  margin-top: 2rem;
+  background: rgba(26, 26, 26, 0.7);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 215, 0, 0.25);
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 0 12px rgba(255, 215, 0, 0.2);
+}
+.map h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: gold;
+}
+.map iframe {
+  width: 100%;
+  height: 350px;
+  border: none;
+  border-radius: 8px;
+}
+
+/* ========================= */
+/* Footer */
+/* ========================= */
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background: #000;
+  border-top: 2px solid gold;
+  margin-top: 2rem;
+  color: #aaa;
+}
+footer p {
+  margin: 0.5rem 0;
+}
+footer a {
+  color: gold;
+  text-decoration: none;
+  transition: 0.3s;
+}
+footer a:hover {
+  color: #fff;
+}
+
+/* ========================= */
+/* GLASS EFFECT (Reusable) */
+/* ========================= */
+.glass-box {
+  background: rgba(26, 26, 26, 0.7); /* dark transparent background */
+  backdrop-filter: blur(8px);        /* blur effect */
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 215, 0, 0.3); /* subtle gold border */
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.15);
+  padding: 2rem;
+}
+
+/* Apply to About, Home intro, Menu Cards */
+.about,
+.hero-text,
+.card {
+  background: rgba(26, 26, 26, 0.6);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 215, 0, 0.25);
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(255, 215, 0, 0.15);
+  padding: 1.5rem;
+}
+
+/* Menu card specific tweak */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 18px rgba(255, 215, 0, 0.35);
+}
